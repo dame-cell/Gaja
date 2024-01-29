@@ -3,7 +3,7 @@
 We release Gajendra, a Hindi/Hinglish chat model instruction finetuned on SarvamAI's OpenHathi model.
 
 <p align="center" width="100%">
-      <img src="asset\gajendra.jpg" alt="Gajendra is an Hindi/Hinglish instruction-tuned model based on the different instruct datasets." style="width: 25%; min-width: 400px; display: block; margin: auto;">
+    <img src="asset\gajendra.jpg" alt="Gajendra is a Hindi/Hinglish instruction-tuned model based on different instruct datasets." style="width: 50%; min-width: 600px; display: block; margin: auto;">
 </p>
 
 
