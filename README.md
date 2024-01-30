@@ -19,8 +19,8 @@ This repository contains the code for  "Gajendra", a project focused on Instruct
 
 | dataset name | Author | Link |
 |----------|----------|----------|
-| hindi_instruct_v | smangrul |[hindi-instruct-v](https://huggingface.co/datasets/smangrulhindi_instruct_v1) |
-| alpaca-gpt4-hindi-hinglish | NebulaByte | [alpaca-gpt4-hindi-hinglish](https://huggingface.co/datasetsNebulaByte/alpaca-gpt4-hindi-hinglish) |
+| hindi_instruct_v | smangrul |[hindi-instruct-v](https://huggingface.co/datasets/smangrul/hindi_instruct_v1)|
+| alpaca-gpt4-hindi-hinglish | NebulaByte | [alpaca-gpt4-hindi-hinglish](https://huggingface.co/datasets/NebulaByte/alpaca-gpt4-hindi-hinglish) |
 | indic-instruct-data-v0.1 | ai4bharat |[indic-instruct-data-v0.1](https://huggingface.co/datasets/ai4bharat/indic-instruct-data-v0.1) |
 | databricks-dolly-15k-Hindi| aaditya|[databricks-dolly-15k-Hindi](https://huggingface.co/datasets/aaditya/databricks-dolly-15k-Hindi)|
 | databricks-dolly-15k-Hinglish-Codemix | aaditya|[databricks-dolly-15k-Hinglish-Codemix](https://huggingface.co/datasets/aaditya/databricks-dolly-15k-Hinglish-Codemix)|
