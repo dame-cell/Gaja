@@ -7,8 +7,12 @@ We release Gajendra, a Hindi/Hinglish chat model instruction finetuned on Sarvam
 </p>
 
 <p align="center">
+    <small>
+
     **Note:**
-    The selection of the name "Gajendra" is inspired by the profound narratives found in the Holy Scriptures of Hinduism, specifically the "Bhagavata Purana." This choice is made with utmost respect for the cultural and spiritual significance of these scriptures. It is intended purely as a source of inspiration for the project, reflecting the rich heritage and wisdom encapsulated in Hindu literature. Any reference to religious or cultural aspects is approached with sincere reverence, and there is no intention to cause offense. 
+    The selection of the name "Gajendra" is inspired by the profound narratives found in the Holy Scriptures of Hinduism, specifically the "Bhagavata Purana." This choice is made with utmost respect for the cultural and spiritual significance of these scriptures. It is intended purely as a source of inspiration for the project, reflecting the rich heritage and wisdom encapsulated in Hindu literature. Any reference to religious or cultural aspects is approached with sincere reverence, and there is no intention to cause offense.
+
+</small>
 </p>
 
 
