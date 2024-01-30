@@ -1,0 +1,15 @@
+[tool.poetry]
+name = "gajendra"
+version = "0.1.0"
+description = "instruct-fine tuning openhathi"
+authors = ["dame rajee <doss72180@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+datasets = "^2.16.1"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
