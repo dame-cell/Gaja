@@ -1,0 +1,41 @@
+max_seq_length: 2048
+dtype: null
+load_in_4bit: true
+model_name: "sarvamai/OpenHathi-7B-Hi-v0.1-Base"
+target_modules:
+  - "q_proj"
+  - "k_proj"
+  - "v_proj"
+  - "o_proj"
+  - "gate_proj"
+  - "up_proj"
+  - "down_proj"
+  
+ra_alpha: 16
+lora_dropout: 0
+bias: "none"
+use_gradient_checkpointing: true
+random_state: 3407
+use_rslora: false
+loftq_config: null  
+dataset_text_field: "text"
+dataset_num_proc: 2  
+packing: false
+per_device_train_batch_size: 2
+gradient_accumulation_steps: 4
+warmup_steps: 5
+hub_strategy: "checkpoint"
+num_train_epochs: 2
+push_to_hub: true
+push_to_hub_model_id: "Open-hathi-instruct-22k"
+learning_rate: 2e-4
+resume_from_checkpoint: true
+fp16: false  
+bf16: true   
+logging_steps: 1
+optim: "adamw_8bit"
+weight_decay: 0.01
+save_total_limit: 2
+save_steps: 20
+lr_scheduler_type: "linear"
+seed: 3407
