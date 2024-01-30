@@ -20,6 +20,9 @@ This repository contains the code for  "Gajendra", a project focused on Instruct
 * The entire dataset was jsut a combination of different dataset from hugging face hub
 * The total amount of dataset used here is - 5 
 
+
+# Dataset Information
+
 | dataset name | Author | Link |
 |----------|----------|----------|
 | hindi_instruct_v | smangrul |[hindi-instruct-v](https://huggingface.co/datasets/smangrul/hindi_instruct_v1)|
