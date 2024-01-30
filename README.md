@@ -6,6 +6,11 @@ We release Gajendra, a Hindi/Hinglish chat model instruction finetuned on Sarvam
     <img src="asset\gajendra.jpg" alt="Gajendra is a Hindi/Hinglish instruction-tuned model based on different instruct datasets." style="width: 50%; min-width: 600px; display: block; margin: auto;">
 </p>
 
+<p align="center">
+    **Note:**
+    The selection of the name "Gajendra" is inspired by the profound narratives found in the Holy Scriptures of Hinduism, specifically the "Bhagavata Purana." This choice is made with utmost respect for the cultural and spiritual significance of these scriptures. It is intended purely as a source of inspiration for the project, reflecting the rich heritage and wisdom encapsulated in Hindu literature. Any reference to religious or cultural aspects is approached with sincere reverence, and there is no intention to cause offense. 
+</p>
+
 
 
 This repository contains the code for  "Gajendra", a project focused on Instruct-Fine-tuning SarvamAI's OpenHathi model. which employs the LoRA methodology for efficient fine tuning. 
