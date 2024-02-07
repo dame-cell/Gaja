@@ -1,17 +1,17 @@
-# Gajendra
+# Gaja
 
-We release Gajendra, a Hindi/Hinglish chat model instruction finetuned on SarvamAI's OpenHathi model.
+We release Gaja, a Hindi/Hinglish chat model instruction finetuned on SarvamAI's OpenHathi model.
 
 <p align="center" width="100%">
     <img src="asset\gajendra.jpg" alt="Gajendra is a Hindi/Hinglish instruction-tuned model based on different instruct datasets." style="width: 50%; min-width: 600px; display: block; margin: auto;">
 </p>
 
 <p align="center" width="100%" style="color: gray;">
-     Inspired by the "Bhagavata Purana," the name "Gajendra" is chosen with respect for Hindu scriptures. It serves as a source of inspiration, The reference to religious or cultural aspects is approached with sincere reverence and no intention to cause offense.</a>
+     The word "gaja" (Sanskrit: गज) is a term in Sanskrit, the classical language of ancient India, and it translates to "elephant" in English
 </p>
 
 
-This repository contains the code for  "Gajendra", a project focused on Instruct-Fine-tuning SarvamAI's OpenHathi model. which employs the LoRA methodology for efficient fine tuning. 
+This repository contains the code for  "Gaja", a project focused on Instruct-Fine-tuning SarvamAI's OpenHathi model. which employs the LoRA methodology for efficient fine tuning. 
 
 # Important Stuff to know 
 
