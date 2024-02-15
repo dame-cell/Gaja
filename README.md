@@ -13,6 +13,14 @@ We release Gaja , a Hindi/Hinglish chat model instruction finetuned on SarvamAI'
 
 This repository contains the code for  "Gaja", a project focused on Instruct-Fine-tuning SarvamAI's OpenHathi model. which employs the LoRA methodology for efficient fine tuning. 
 
+# Contents 
+1) [Important Stuff to know](#important-stuff-to-know)
+2) [Gaja Model-Based Variant](#gaja-model-based-variant)
+3) [Dataset Information](#dataset-information)
+4) [Example output](#example-output)
+5) [Prompt Format](#prompt-format)
+6) [Local Inference](#local-inference)
+7) [Usage Note](#usage-note)
 
 
 # Important Stuff to know 
@@ -47,7 +55,7 @@ This repository contains the code for  "Gaja", a project focused on Instruct-Fin
 | क्वांटम भौतिकी में हीजनवारण क्या है, और यह क्यों महत्वपूर्ण है? (What is superposition in quantum physics, and why is it important?)| | क्वांटम भौतिकी में हीजनवारण एक ऐसा घटना है जिसमें एक ही कण दो अलग-अलग स्थानों पर मौजूद हो सकता है। यह एक मौलिक भौतिकी का नियम है जो क्वांटम भौतिकी के क्वांटम यांत्रिकी के सिद्धांतों के माध्यम से समझाया गया है। हीजनवारण के पीछे का सिद्धांत यह है कि क्वांटम कणों में एक क्वांटम अवस्था होती है, जो एक विशेष गुण है जो उन्हें एक विशेष तरीके से कार्य करने की अनुमति देता है। इस गुण के कारण, हीजनवारण संभव है। हीजनवारण की अवधारणा क्वांटम भौतिकी के कई मौलिक सिद्धांतों के लिए महत्वपूर्ण है, जिसमें क्वांटम टनलिंग, क्वांटम बिहेवियर और क्वांटम जानकारी शामिल हैं। हीजनवारण के पीछे के सिद्धांतों को समझने से क्वांटम कंप्यूटिंग के क्षेत्र में प्रगति हो सकती है और क्वांटम यांत्रिकी के सिद्धांतों को बेहतर समझने में मदद मिल सकती है।|
 | what does the word sophicticated mean?, answer in english then translate the answer  to hindi| | Sophisticated is a word that describes something that is very sophisticated or refined. It is often used to describe a person who is very cultured and has a high level of education and refined taste. It can also be used to describe a product or service that is of high quality and has been carefully crafted.  Translation: सौम्वरण एक ऐसा शब्द है जो किसी ऐसी चीज़ का वर्णन करता है जो बहुत ही सौम्वरण या परिष्कृत होती है। इसका उपयोग अक्सर किसी ऐसे व्यक्ति का वर्णन करने के लिए किया जाता है जो बहुत ही संस्कृत है और जिसकी उच्च स्तर की शिक्षा और परिष्कृत स्वाद है। इसका उपयोग किसी ऐसे उत्पाद या सेवा का वर्णन करने के लिए भी किया जा सकता है जो उच्च गुणवत्ता का हो और जिसे सावधानीपूर्वक तैयार किया गया हो।</s> |
 
-# Prompting Format for Instruction Models
+# Prompt Format 
 The prompt template for this Model follows the alpaca format 
 1) The prompt template for only instruction
 ```python
@@ -83,6 +91,8 @@ Steps to follow:
 -  Type ollama create choose-a-model-name -f <location of the file e.g. ./Modelfile>'
 -  ollama run choose-a-model-name
   For more Better Instruction please follow this docs -> [Ollama Modelfile](https://github.com/ollama/ollama/blob/main/docs/modelfile.md)
+
+
 
 # Usage Note
 It's important to note that the models have not undergone detoxification. Therefore, while they possess impressive linguistic capabilities, there is a possibility for them to generate content that could be deemed harmful or offensive. We urge users to exercise discretion and supervise the model's outputs closely, especially in public or sensitive applications.
