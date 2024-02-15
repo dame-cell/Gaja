@@ -9,8 +9,6 @@ We release Gaja , a Hindi/Hinglish chat model instruction finetuned on SarvamAI'
 <p align="center" width="100%" style="color: gray;">
      The word "gaja" (Sanskrit: गज) is a term in Sanskrit, the classical language of ancient India, and it translates to "elephant" in English
 </p>
-
-
 This repository contains the code for  "Gaja", a project focused on Instruct-Fine-tuning SarvamAI's OpenHathi model. which employs the LoRA methodology for efficient fine tuning. 
 
 # Contents 
@@ -23,12 +21,14 @@ This repository contains the code for  "Gaja", a project focused on Instruct-Fin
 7) [Usage Note](#usage-note)
 
 
+If you appreciate this work and found it helpful, consider giving it a star ⭐️ on GitHub. Your support motivates me to continue improving and adding new features. Thank you for your encouragement!
+
 # Important Stuff to know 
 
 * The total rows of the instruct dataset contains about 50k rows 
 * The entire finetune process was done in a free goggle colab using the t4 gpu 
 * The entire dataset was jsut a combination of different dataset from hugging face hub
-* The total amount of dataset used here is - 5 
+ 
 
 # Gaja Model-Based Variant
 
