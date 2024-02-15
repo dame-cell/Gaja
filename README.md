@@ -1,6 +1,6 @@
 # Gaja
 
-We release Gaja, a Hindi/Hinglish chat model instruction finetuned on SarvamAI's OpenHathi model.
+We release Gaja , a Hindi/Hinglish chat model instruction finetuned on SarvamAI's OpenHathi model.
 
 <p align="center" width="100%">
     <img src="asset\gajendra.jpg" alt="Gajendra is a Hindi/Hinglish instruction-tuned model based on different instruct datasets." style="width: 50%; min-width: 600px; display: block; margin: auto;">
@@ -13,6 +13,8 @@ We release Gaja, a Hindi/Hinglish chat model instruction finetuned on SarvamAI's
 
 This repository contains the code for  "Gaja", a project focused on Instruct-Fine-tuning SarvamAI's OpenHathi model. which employs the LoRA methodology for efficient fine tuning. 
 
+
+
 # Important Stuff to know 
 
 * The total rows of the instruct dataset contains about 50k rows 
@@ -20,6 +22,13 @@ This repository contains the code for  "Gaja", a project focused on Instruct-Fin
 * The entire dataset was jsut a combination of different dataset from hugging face hub
 * The total amount of dataset used here is - 5 
 
+# Gaja Model-Based Variant
+
+| Model              | Type   | Data       | Base Model | # Params | Download Links |
+|--------------------|--------|------------|------------|----------|----------------|
+| Gaja               | Variant| 50k-instruct      | Open-Hathi  | 7B     | [HF-HUB](https://huggingface.co/damerajee/Gaja)|
+| Celestia           | merge  |            | Open-Hathi | 7B       | [HF-HUB](https://huggingface.co/damerajee/Celestia)|
+|
 
 # Dataset Information
 
