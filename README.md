@@ -2,9 +2,10 @@
 
 We release Gaja , a Hindi/Hinglish chat model instruction finetuned on SarvamAI's OpenHathi model.
 
-<p align="center" width="100%">
-    <img src="asset\gajendra.jpg" alt="Gajendra is a Hindi/Hinglish instruction-tuned model based on different instruct datasets." style="width: 50%; min-width: 600px; display: block; margin: auto;">
-</p>
+<div style="display: flex; justify-content: space-between;">
+  <img src="asset\gajendra.jpg" alt="Gajendra is a Hindi/Hinglish instruction-tuned model based on different instruct datasets." style="width: 45%; min-width: 300px;">
+  <img src="asset\gajendra.jpg" alt="Gajendra is a Hindi/Hinglish instruction-tuned model based on different instruct datasets." style="width: 45%; min-width: 300px;">
+</div>
 
 <p align="center" width="100%" style="color: gray;">
      The word "gaja" (Sanskrit: गज) is a term in Sanskrit, the classical language of ancient India, and it translates to "elephant" in English
