@@ -4,7 +4,7 @@ We release Gaja , a Hindi/Hinglish chat model instruction finetuned on SarvamAI'
 
 <div style="display: flex; justify-content: space-between;">
   <img src="asset\gajendra.jpg" alt="Gajendra is a Hindi/Hinglish instruction-tuned model based on different instruct datasets." style="width: 45%; min-width: 300px;">
-  <img src="asset\gajendra.jpg" alt="Gajendra is a Hindi/Hinglish instruction-tuned model based on different instruct datasets." style="width: 45%; min-width: 300px;">
+  <img src="asset\Dariava.jpg" alt="Gajendra is a Hindi/Hinglish instruction-tuned model based on different instruct datasets." style="width: 45%; min-width: 300px;">
 </div>
 
 <p align="center" width="100%" style="color: gray;">
