@@ -120,7 +120,7 @@ dtype: bfloat16
 ```
 
 # Local Inference 
-You can try the model out in Ollama in your locally 
+You can try the model out  locally using Ollama
 Steps to follow:
 -  Download any of the gguf model you want from [Gaja.gguf](https://huggingface.co/damerajee/gaja-gguf)
 -  install ollama either for Mac or Linux
