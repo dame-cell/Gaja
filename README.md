@@ -1,6 +1,7 @@
 # Gaja
 
 We release Gaja , a Hindi/Hinglish chat model instruction finetuned on SarvamAI's OpenHathi model.
+And Dairava which is a merge of Gaja and Ai4bharat instruct model "Airavata"
 
 
 <div style="display: block;">
@@ -36,7 +37,7 @@ If you appreciate this work and found it helpful, consider giving it a star ‚≠êÔ
 |--------------------|--------|------------|------------|----------|----------------|
 | Gaja               | Variant| 50k-instruct      | Open-Hathi  | 7B     | [HF-HUB](https://huggingface.co/damerajee/Gaja)|
 | Celestia           | merge  |            | Open-Hathi | 7B       | [HF-HUB](https://huggingface.co/damerajee/Celestia)|
-|
+
 
 # Dataset Information
 
