@@ -131,5 +131,11 @@ Steps to follow:
 -  ollama run choose-a-model-name
   For more Better Instruction please follow this docs -> [Ollama Modelfile](https://github.com/ollama/ollama/blob/main/docs/modelfile.md)
 
+# Future plans
+- Will be Instruct-fine tuning on more dataset( more than 100k + rows)
+- Will be performing more merges using different techniques like ties , dare and more slerp
+- Will be evaluating the model on both Hindi and English benchmark
+  
+
 # Usage Note
 It's important to note that the models have not undergone detoxification. Therefore, while they possess impressive linguistic capabilities, there is a possibility for them to generate content that could be deemed harmful or offensive. We urge users to exercise discretion and supervise the model's outputs closely, especially in public or sensitive applications.
