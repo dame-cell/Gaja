@@ -36,7 +36,7 @@ If you appreciate this work and found it helpful, consider giving it a star ‚≠êÔ
 | Model              | Type   | Data       | Base Model | # Params | Download Links |
 |--------------------|--------|------------|------------|----------|----------------|
 | Gaja               | Variant| 50k-instruct      | Open-Hathi  | 7B     | [HF-HUB](https://huggingface.co/damerajee/Gaja)|
-| Celestia           | merge  |            | Open-Hathi | 7B       | [HF-HUB](https://huggingface.co/damerajee/Celestia)|
+| Dairava           | merge  |            | Open-Hathi | 7B       | [HF-HUB](https://huggingface.co/damerajee/Dairava)|
 
 
 # Dataset Information
