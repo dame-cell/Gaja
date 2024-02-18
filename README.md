@@ -4,9 +4,9 @@ We release Gaja , a Hindi/Hinglish chat model instruction finetuned on SarvamAI'
 And Dairava which is a merge of Gaja and Ai4bharat instruct model "Airavata"
 
 
-<div text-align: center;">
+<p align="center">
   <img src="asset\Dariava.jpg" alt="Gajendra is a Hindi/Hinglish instruction-tuned model based on different instruct datasets." style="width: 45%; min-width: 300px;">
-</div>
+</p>
 
 
 This repository contains the code for  "Gaja", a project focused on Instruct-Fine-tuning SarvamAI's OpenHathi model. which employs the LoRA methodology for efficient fine tuning. 
