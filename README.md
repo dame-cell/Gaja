@@ -13,7 +13,8 @@ This repository contains the code for  "Gaja", a project focused on Instruct-Fin
 
 # Contents 
 1) [Indic-Eval](#indic-eval)
-
+2) [Usage-Note](#usage-note)
+3) [Prompt](#prompt)
 
 If you appreciate this work and found it helpful, consider giving it a star ⭐️ on GitHub. Your support motivates me to continue improving and adding new features. Thank you for your encouragement!
 
@@ -25,7 +26,24 @@ If you appreciate this work and found it helpful, consider giving it a star ⭐�
 | Indic QA Evaluation    |    20    | -    |   0.62      |  0.68    | 0.75   |       Bert Score          |
 | Summarization Evaluation |  20    |  -       |   0.68      | 0.71     |0.74    |   Bert Score          |
 
+# Prompt 
 
+The prompt for the Model without system prompt 
+```python
+<|im_start|>user
+{}<|im_end|> 
+<|im_start|>assistant
+{}<|im_end|> 
+```
+The prompt for the Model with system prompt 
+```python
+|im_start|>system
+{}<|im_end|> 
+<|im_start|>user
+{}<|im_end|> 
+<|im_start|>assistant
+{}<|im_end|> 
+```
 
-# Usage Note
+# Usage-Note
 It's important to note that the models have not undergone detoxification. Therefore, while they possess impressive linguistic capabilities, there is a possibility for them to generate content that could be deemed harmful or offensive. We urge users to exercise discretion and supervise the model's outputs closely, especially in public or sensitive applications.
