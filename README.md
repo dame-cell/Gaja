@@ -29,7 +29,7 @@ If you appreciate this work and found it helpful, consider giving it a star ‚≠êÔ
 
 | Task                   | # Samples | Accuracy | Precision | F1       | Recall   |   Metrics  | 
 |------------------------|-----------|----------|-----------|----------|----------|------------|
-| Sentiment Analysis     |    100   |  0.85    |   -       | 0.57     | 0.87     |   Accuracy,F1 score          |
+| Sentiment Analysis     |    100   |  0.85    |   -       | 0.57     | -    |   Accuracy,F1 score          |
 | Indic QA Evaluation    |    20    | -    |   0.62      |  0.68    | 0.75   |       Bert Score          |
 | Summarization Evaluation |  20    |  -       |   0.68      | 0.71     |0.74    |   Bert Score          |
 
