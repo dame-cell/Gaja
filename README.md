@@ -1,7 +1,7 @@
 # Gaja
 
 We release Gaja , a Hindi/Hinglish chat model instruction finetuned on SarvamAI's OpenHathi model.
-And Dairava which is a merge of Gaja and Ai4bharat instruct model "Airavata"
+
 
 
 <p align="center">
