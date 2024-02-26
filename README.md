@@ -19,6 +19,7 @@ This repository contains the code for  "Gaja", a project focused on Instruct-Fin
 If you appreciate this work and found it helpful, consider giving it a star ⭐️ on GitHub. Your support motivates me to continue improving and adding new features. Thank you for your encouragement!
 
 # Indic-Eval
+Performing zero-shot Evaluation on the model : 
 
 | Task                   | # Samples | Accuracy | Precision | F1       | Recall   |   Metrics  | 
 |------------------------|-----------|----------|-----------|----------|----------|------------|
