@@ -4,36 +4,41 @@ from bert_score import score
 import torch 
 
 
-def evaluate_summarization(dataset, model, tokenizer, first_number: int, second_number: int):
-    result = []
-    data = []
+def analyze_summarization(text: str, summary: str, model, tokenizer):
+    messages = [
+        {"role": "system", "content": "Given a text you will provide a very short and clear and concise summary of it"},
+        {"role": "user", "content": f"{text} Can you provide a summary of this, Answer in hindi"},
+    ]
 
+    inputs = tokenizer.apply_chat_template(
+        messages,
+        tokenize=True,
+        add_generation_prompt=True,
+        return_tensors="pt",
+    ).to("cuda")
+
+    love = model.generate(input_ids=inputs, max_new_tokens=400, temperature=0.1, use_cache=True)
+    output = tokenizer.decode(love[0], skip_special_tokens=True)
+    model_summary = output.split("assistant\n")[1].strip()
+
+    actual_summary = summary
+
+    # Calculate BERTScore for the model summary against the actual summary
+    scores = score([model_summary], [actual_summary], lang='hi')
+
+    return {'Input Text': text, 'Actual Summary': actual_summary,
+            'Model Summary': model_summary, 'BertScore': scores}
+
+
+def evaluate_summarization(dataset, model, tokenizer, first_number: int, second_number: int):
+    data = []
     for text, summary in zip(dataset['article'][first_number:second_number], dataset['summary'][first_number:second_number]):
         if text is not None and summary is not None:
-            messages = [
-                {"role": "system", "content": "Given a text you will provide a very short and clear and concise summary of it"},
-                {"role": "user", "content": f"{text} Can you provide a summary of this, Answer in hindi"},
-            ]
-
-            inputs = tokenizer.apply_chat_template(
-                messages,
-                tokenize=True,
-                add_generation_prompt=True,
-                return_tensors="pt",
-            ).to("cuda")
-
-            love = model.generate(input_ids=inputs, max_new_tokens=400, temperature=0.1, use_cache=True)
-            output = tokenizer.decode(love[0], skip_special_tokens=True)
-            model_summary = output.split("assistant\n")[1].strip()
-
-            actual_summary = summary
-
-            # Calculate BERTScore for the model summary against the actual summary
-            scores = score([model_summary], [actual_summary], lang='hi')
-
-            # Append the results to the list as dictionaries
-            data.append({'Input Text': text, 'Actual Summary': actual_summary,
-                         'Model Summary': model_summary, 'BertScore': scores})
+            try:
+                data.append(analyze_summarization(text, summary, model, tokenizer))
+            except Exception as e:
+                print(f"Error: {e}")
+                continue
         else:
             print("Input text or summary is None. Skipping...")
 
