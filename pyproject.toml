@@ -8,6 +8,7 @@ readme = "README.md"
 [tool.poetry.dependencies]
 python = "^3.11"
 datasets = "^2.16.1"
+bert-score = "^0.3.13"
 
 
 [build-system]
