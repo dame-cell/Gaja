@@ -1,7 +1,7 @@
 from Utils.utils import loading_model_tokenizer, loading_diff_datasets
 import pandas as pd
 from bert_score import score
-
+import torch 
 
 
 def evaluate_summarization(dataset, model, tokenizer, first_number: int, second_number: int):
@@ -39,6 +39,31 @@ def evaluate_summarization(dataset, model, tokenizer, first_number: int, second_
 
     return pd.DataFrame(data)
 
+def average_(data):
+
+    if data is not None and isinstance(data, dict):
+        bert_scores = data.get('BertScore', [])
+
+        # Check if BertScore is present in the data
+        if bert_scores:
+            precision_list = [scores[0] for scores in bert_scores]
+            recall_list = [scores[1] for scores in bert_scores]
+            f1_list = [scores[2] for scores in bert_scores]
+
+            # Compute the mean of precision, recall, and F1-score
+            average_precision = torch.stack(precision_list).mean().item()
+            average_recall = torch.stack(recall_list).mean().item()
+            average_f1 = torch.stack(f1_list).mean().item()
+
+            return average_precision, average_recall, average_f1
+        else:
+            print("Error: 'BertScore' key not found in the data.")
+            return None
+    else:
+        print("Error: Invalid input data.")
+        return None
+        
+
 
 if __name__ == "__main__":
     Model, Tokenizer = loading_model_tokenizer()
@@ -47,3 +72,8 @@ if __name__ == "__main__":
     dataset = dataset.select(range(20))
     df = evaluate_summarization(dataset, Model, Tokenizer, 0, 20)
     df.to_csv("eval_summarization.csv")
+    average_precision, average_recall, average_f1 = average_(df)
+    print("Average BERTScore:")
+    print("Precision:", average_precision)
+    print("Recall:", average_recall)
+    print("F1-score:", average_f1)
