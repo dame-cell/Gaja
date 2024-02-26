@@ -40,9 +40,7 @@ def evaluate_summarization(dataset, model, tokenizer, first_number: int, second_
     return pd.DataFrame(data)
 
 def average_(data):
-
-    if data is not None and isinstance(data, dict):
-        bert_scores = data.get('BertScore', [])
+        bert_scores = data['bert score']
 
         # Check if BertScore is present in the data
         if bert_scores:
@@ -59,9 +57,7 @@ def average_(data):
         else:
             print("Error: 'BertScore' key not found in the data.")
             return None
-    else:
-        print("Error: Invalid input data.")
-        return None
+   
         
 
 
