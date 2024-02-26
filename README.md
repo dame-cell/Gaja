@@ -12,15 +12,7 @@ And Dairava which is a merge of Gaja and Ai4bharat instruct model "Airavata"
 This repository contains the code for  "Gaja", a project focused on Instruct-Fine-tuning SarvamAI's OpenHathi model. which employs the LoRA methodology for efficient fine tuning. 
 
 # Contents 
-1) [Important Stuff to know](#important-stuff-to-know)
-2) [Gaja Model-Based Variant](#gaja-model-based-variant)
-3) [Dataset Information](#dataset-information)
-4) [Gaja-Example output](#gaja-example-output)
-5) [Dairava-Example output](#dairava-example-output)
-6) [Gaja-Prompt Format](#gaja-prompt-format)
-7) [Dairava-prompt Format](#dairava-prompt-format)
-8) [Local Inference](#local-inference)
-9) [Usage Note](#usage-note)
+1) [Indic-Eval](#indic-eval)
 
 
 If you appreciate this work and found it helpful, consider giving it a star ⭐️ on GitHub. Your support motivates me to continue improving and adding new features. Thank you for your encouragement!
