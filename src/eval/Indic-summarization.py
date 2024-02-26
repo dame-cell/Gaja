@@ -45,10 +45,10 @@ def evaluate_summarization(dataset, model, tokenizer, first_number: int, second_
     return pd.DataFrame(data)
 
 def average_(data):
+    if not data.empty and 'bert score' in data:
         bert_scores = data['bert score']
-
-        # Check if BertScore is present in the data
-        if bert_scores:
+        
+        if not bert_scores.empty:
             precision_list = [scores[0] for scores in bert_scores]
             recall_list = [scores[1] for scores in bert_scores]
             f1_list = [scores[2] for scores in bert_scores]
@@ -60,8 +60,11 @@ def average_(data):
 
             return average_precision, average_recall, average_f1
         else:
-            print("Error: 'BertScore' key not found in the data.")
+            print("Error: 'bert score' column is empty.")
             return None
+    else:
+        print("Error: Invalid input data.")
+        return None
    
         
 
