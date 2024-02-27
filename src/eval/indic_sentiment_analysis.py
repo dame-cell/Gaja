@@ -49,6 +49,12 @@ if __name__ == "__main__":
     dataset = dataset.shuffle(seed=76)
     dataset = dataset.select(range(100))
     df = eval_sentiment_analysis(dataset, Model, Tokenizer)
+    accuracy = accuracy_score(df['Actual Sentiment'], df['Model Sentiment'])  
+    f1 = f1_score(df['Actual Sentiment'], df['Model Sentiment'], average='weighted')
+
+    print("Accuracy:", accuracy)
+    print("F1 Score:", f1)
+
     df.to_csv("eval_sentiment_analysis.csv")
 
 
