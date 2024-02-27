@@ -33,7 +33,7 @@ def analyze_sentiment(text: str, model, tokenizer):
 
 def eval_sentiment_analysis(dataset, model, tokenizer):
     data = []
-    for text, label in tqdm(zip(dataset['INDIC REVIEW'], dataset['LABEL']), total=len(dataset)):
+    for text, label in tqdm(zip(dataset['INDIC REVIEW'], dataset['LABEL']), total=len(dataset),total=100):
         if text is not None and label is not None:
             model_sentiment = analyze_sentiment(text, model, tokenizer)
             data.append({'Input Text': text, 'Actual Sentiment': label, 'Model Sentiment': model_sentiment})
