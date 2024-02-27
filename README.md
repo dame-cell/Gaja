@@ -22,7 +22,7 @@ Performing zero-shot Evaluation on the model :
 | Task                   | # Samples | Accuracy | Precision | F1       | Recall   |   Metrics  | 
 |------------------------|-----------|----------|-----------|----------|----------|------------|
 | Indic-Sentiment Analysis     |    100   |  0.85    |   -       | 0.57     | -    |   Accuracy,F1 score          |
-| Indic-QA Evaluation    |    20    | -    |   0.62      |  0.68    | 0.75   |       Bert Score          |
+| Indic-QA Evaluation    |    50    | -    |   0.62      |  0.68    | 0.75   |       Bert Score          |
 | Indic-Summarization Evaluation |  50    |  -       |   0.65      | 0.68     |0.72   |   Bert Score          |
 
 # Prompt 
