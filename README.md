@@ -2,14 +2,12 @@
 
 We release Gaja , a Hindi/Hinglish chat model instruction finetuned on SarvamAI's OpenHathi model.
 
-
-
 <p align="center">
   <img src="asset\Dariava.jpg" alt="Gajendra is a Hindi/Hinglish instruction-tuned model based on different instruct datasets." style="width: 45%; min-width: 300px;">
 </p>
 
 
-This repository contains the code for  "Gaja", a project focused on Instruct-Fine-tuning SarvamAI's OpenHathi model. which employs the LoRA methodology for efficient fine tuning. 
+This repository contains the code for  "Gaja", a project focused on Instruct-Fine-tuning SarvamAI's OpenHathi model. which employs the LoRA + Unsloth methodology for efficient fine tuning. 
 
 # Contents 
 1) [Indic-Eval](#indic-eval)
@@ -23,9 +21,9 @@ Performing zero-shot Evaluation on the model :
 
 | Task                   | # Samples | Accuracy | Precision | F1       | Recall   |   Metrics  | 
 |------------------------|-----------|----------|-----------|----------|----------|------------|
-| Sentiment Analysis     |    100   |  0.85    |   -       | 0.57     | -    |   Accuracy,F1 score          |
-| Indic QA Evaluation    |    20    | -    |   0.62      |  0.68    | 0.75   |       Bert Score          |
-| Summarization Evaluation |  20    |  -       |   0.68      | 0.71     |0.74    |   Bert Score          |
+| Indic-Sentiment Analysis     |    100   |  0.85    |   -       | 0.57     | -    |   Accuracy,F1 score          |
+| Indic-QA Evaluation    |    50    | -    |   0.62      |  0.68    | 0.75   |       Bert Score          |
+| Indic-Summarization Evaluation |  50    |  -       |   0.65      | 0.68     |0.72   |   Bert Score          |
 
 # Prompt 
 
