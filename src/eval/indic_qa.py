@@ -1,26 +1,22 @@
-from Utils.utils import loading_model_tokenizer ,loading_diff_datasets
 import pandas as pd
-from datasets import  Dataset 
+from datasets import load_dataset, Dataset 
 from bert_score import score
 from tqdm import tqdm 
 import torch 
 
 def extract_text(answer):
-      if answer['text']:
-        return answer['text'][0]
-      else:
-        return None  
+  if answer['text']:
+    return answer['text'][0]
+  else:
+    return None
+
       
 def preprocess_data(data):
-  if data is not None and isinstance(data, pd.DataFrame):
-    df = dataset.to_pandas(data)
+    df = data.to_pandas()
     df['extracted_text'] = df['answers'].apply(extract_text)
-    df.dropna(subset=['extracted_text'], inplace=True)
-    dataset = Dataset.from_pandas(df)
-    return dataset   
-  else:
-    print("data is empty,please check again")
-
+    df.dropna(subset=['extracted_text'], inplace=True)  
+    return df
+    
 def analyze_indic_qa(text: str, question: str, answer: str, model, tokenizer):
     messages = [
         {"role": "system", "content": "Given a large body of text representing context, your task is to answer questions based on this context Answer the question in less than 6 words"},
@@ -43,9 +39,9 @@ def analyze_indic_qa(text: str, question: str, answer: str, model, tokenizer):
     return {'Input Text': text, 'Actual answer': answer, 'Model answer': model_answer, 'bert score': scores}
 
 
-def indic_qa_evaluate(dataset, model, tokenizer):
+def indic_qa_evaluate(dataset, model, tokenizer,first_number, second_number):
     data = []
-    for context, question, answer in tqdm(zip(dataset['context'][0:20], dataset['question'][0:20], dataset['extracted_text'][0:20]), total=20): 
+    for context, question, answer in tqdm(zip(dataset['context'][first_number:second_number], dataset['question'][first_number:second_number], dataset['extracted_text'][first_number:second_number]), total=50): 
         if context is not None and question is not None:
             try:
                 data.append(analyze_indic_qa(context, question, answer, model, tokenizer))
@@ -78,15 +74,13 @@ def average_(data):
     else:
         print("Error: Invalid input data.")
         return None
-
-      
-
 if __name__ == "__main__":
-    Model , Tokenizer = loading_model_tokenizer()
-    dataset = loading_diff_datasets("ai4bharat/IndicQA",param='indicqa.hi',split='test')
+
+    df = preprocess_data(dataset)
+    dataset = Dataset.from_pandas(df)
     dataset = dataset.shuffle(seed=76)
-    dataset = dataset.select(range(20))
-    df = indic_qa_evaluate(dataset, Model, Tokenizer)
+    dataset = dataset.select(range(50))
+    df = indic_qa_evaluate(dataset, model, tokenizer, first_number=0, second_number=50)
     df.to_csv("eval_indic_qa.csv")
     average_precision, average_recall, average_f1 = average_(df)
     print("Average BERTScore:")

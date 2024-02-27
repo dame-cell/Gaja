@@ -46,8 +46,8 @@ def evaluate_summarization(dataset, model, tokenizer, first_number: int, second_
     return pd.DataFrame(data)
 
 def average_(data):
-    if not data.empty and 'bert score' in data:
-        bert_scores = data['bert score']
+    if not data.empty and 'BertScore' in data:
+        bert_scores = data['BertScore']
         
         if not bert_scores.empty:
             precision_list = [scores[0] for scores in bert_scores]
