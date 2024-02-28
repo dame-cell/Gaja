@@ -1,4 +1,5 @@
 import pandas as pd
+from Utils.utils import loading_model_tokenizer ,loading_diff_datasets
 from datasets import load_dataset, Dataset 
 from bert_score import score
 from tqdm import tqdm 
@@ -75,7 +76,8 @@ def average_(data):
         print("Error: Invalid input data.")
         return None
 if __name__ == "__main__":
-
+    model ,tokenizer = loading_model_tokenizer()
+    dataset = loading_diff_datasets("ai4bharat/IndicQA",param='indicqa.hi', split='test')
     df = preprocess_data(dataset)
     dataset = Dataset.from_pandas(df)
     dataset = dataset.shuffle(seed=76)
