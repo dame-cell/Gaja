@@ -18,7 +18,7 @@ This repository contains the code for  "Gaja", a project focused on Fine-Tuning 
 If you appreciate this work and found it helpful, consider giving it a star ⭐️ on GitHub. Your support motivates me to continue improving and adding new features. Thank you for your encouragement!
 
 # Indic-Eval
-Performing zero-shot Evaluation on the model : 
+Conducting a comprehensive zero-shot evaluation across various tasks, followed by the averaging of all scores, provides a holistic assessment of the model's performance.
 
 | Task                   | # Samples | Accuracy | Precision | F1   | Recall | BLEU Score | Metrics                    |
 |------------------------|-----------|----------|-----------|------|--------|------------|----------------------------|
