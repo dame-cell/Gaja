@@ -20,11 +20,14 @@ If you appreciate this work and found it helpful, consider giving it a star ⭐�
 # Indic-Eval
 Performing zero-shot Evaluation on the model : 
 
-| Task                   | # Samples | Accuracy | Precision | F1       | Recall   |   Metrics  | 
-|------------------------|-----------|----------|-----------|----------|----------|------------|
-| Indic-Sentiment Analysis     |    100   |  0.71    |   -       | 0.76     | -    |   Accuracy,F1 score          |
-| Indic-QA Evaluation    |    50    | -    |   0.62      |  0.68    | 0.75   |       Bert Score          |
-| Indic-NLI                       | 50     | 0.24    |   -       | 0.17       |        |     Accuracy,F1 score              |
+| Task                   | # Samples | Accuracy | Precision | F1   | Recall | BLEU Score | Metrics                    |
+|------------------------|-----------|----------|-----------|------|--------|------------|----------------------------|
+| Indic-Sentiment Analysis | 100      | 0.71     | ❌        | 0.76 | ❌     | ❌          | 📊 Accuracy, F1 score       |
+| Indic-QA Evaluation     | 50       | ❌       | 0.62      | 0.68 | 0.75   | ❌          | 📊 Bert Score               |
+| Indic-NLI               | 50       | 0.24     | ❌        | 0.17 | ❌     | ❌          | 📊 Accuracy, F1 score       |
+| Indic-Translation       | ❌       | ❌       | ❌        | ❌   | ❌     | 0.71       | 🔤 BLEU Score               |
+
+
 
 
 # Prompt-Format
