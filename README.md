@@ -28,21 +28,6 @@ Performing zero-shot Evaluation on the model :
 | Indic-NLI                       | 50     | 0.24    |   -       | 0.17       |        |     Accuracy,F1 score              |
 
 
-# Why-bert-score?? 
-
-Alright, let's talk about why we're opting for BERTScore over traditional metrics like ROUGE for assessing summarization models. So, you're in the business of evaluating your model's prowess in summarization, right? Now, with the old-school ROUGE metric, you'd have the model whip up a summary and then compare it with the actual one. Now, that's all well and good if your aim is to have the model parrot back the data. But here's the kicker: Sometimes, the model or our fancy language model might not churn out the exact same summary as the actual one. But hold up! That doesn't mean it's missed the mark entirely. It could still hit the nail on the head, just in its own unique way. 
-
-That's where BERTScore swoops in to save the day. Instead of getting hung up on verbatim matches, BERTScore digs deep into the semantics, weighing up how close the generated summary is to the real deal. So, even if the wording or structure ain't a carbon copy, if the gist is on point, BERTScore gives it a thumbs-up. And that, my friend, means a more nuanced and accurate evaluation of our summarization skills. With BERTScore in our corner, we're not just ticking boxes; we're truly getting to the heart of what makes a good summary.
-BERTScore can indeed be a valuable metric for evaluating summarization models, especially when the focus is on capturing the semantic similarity between the generated and reference summaries. BERTScore considers the contextual embeddings of words and phrases, allowing it to capture subtle semantic nuances and similarities that might be missed by traditional metrics like ROUGE.
-
-Beyond that, BERTScore has been shown to correlate well with human judgments of summary quality, making it a reliable metric for summarization evaluation.
-
-But what's the con?
-
-*  BERTScore relies on pre-trained language models like BERT, which may introduce biases or limitations inherent in the training data
-*  BERTScore's performance may vary depending on the tokenization method used, especially when evaluating languages with complex morphologies or scripts. Inconsistent tokenization between the generated and reference text can affect the alignment and similarity scores.
-
- 
 # Prompt 
 
 The prompt for the Model without system prompt 
