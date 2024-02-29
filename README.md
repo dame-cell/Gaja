@@ -11,9 +11,9 @@ This repository contains the code for  "Gaja", a project focused on Fine-Tuning 
 
 # Contents 
 1) [Indic-Eval](#indic-eval)
+2) [Prompt-Format](#prompt-format)
 2) [Usage-Note](#usage-note)
-3) [Prompt](#prompt)
-4) [Why-Bert-score](#Why-bert-score??)
+
 
 If you appreciate this work and found it helpful, consider giving it a star ⭐️ on GitHub. Your support motivates me to continue improving and adding new features. Thank you for your encouragement!
 
@@ -28,7 +28,7 @@ Performing zero-shot Evaluation on the model :
 | Indic-NLI                       | 50     | 0.24    |   -       | 0.17       |        |     Accuracy,F1 score              |
 
 
-# Prompt 
+# Prompt-Format
 
 The prompt for the Model without system prompt 
 ```python
