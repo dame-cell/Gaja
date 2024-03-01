@@ -12,8 +12,8 @@ This repository contains the code for  "Gaja", a project focused on Fine-Tuning 
 # Contents 
 1) [Indic-Eval](#indic-eval)
 2) [Prompt-Format](#prompt-format)
-2) [Usage-Note](#usage-note)
-
+3) [Usage-Note](#usage-note)
+4) [English-eval](#english-eval)
 
 If you appreciate this work and found it helpful, consider giving it a star ⭐️ on GitHub. Your support motivates me to continue improving and adding new features. Thank you for your encouragement!
 
@@ -27,7 +27,10 @@ Conducting a comprehensive zero-shot evaluation across various tasks, followed b
 | Indic-NLI               | 50       | 0.24     | ❌        | 0.17 | ❌     | ❌          | 📊 Accuracy, F1 score       |
 | Indic-Translation       | 100       | ❌       | ❌        | ❌   | ❌     | 0.71       | 🔤 BLEU Score               |
 
-
+# English-Eval
+| Average                   | ARC | HellaSwag | MMLU | TruthfulQA   | Winogrande | GSM8K| 
+|------------------------|-----------|----------|-----------|------|--------|------------|
+| 	47.69 | 52.82 | 0.71     | 76.31        | 	40.83| 	44.64     |  70.64        | 0.91|
 
 
 # Prompt-Format
