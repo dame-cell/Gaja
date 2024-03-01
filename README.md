@@ -32,7 +32,7 @@ Conducting a comprehensive zero-shot evaluation across various tasks, followed b
 | Indic-Sentiment Analysis | 100      | 0.71     | -        | 0.76 | -     | -          | Accuracy, F1 score       |
 | Indic-QA Evaluation     | 50       |  -       | 0.62      | 0.68 | 0.75   | -          | Bert Score               |
 | Indic-NLI               | 50       | 0.24     | -        | 0.17 | -     | -          | Accuracy, F1 score       |
-| Indic-Translation       | 100       | -       | -        | -   | -     | 0.71       |  BLEU Score               |
+| Indic-Paraphrase       | 100       | -       | -        | -   | -     | 0.71       |  Accuracy, F1 score        |
 
 # English-Eval
 
@@ -40,7 +40,7 @@ Model name| Average  | ARC | HellaSwag | MMLU | TruthfulQA   | Winogrande | GSM8
 |-------|------------------------|-----------|----------|-----------|------|--------|------------|       
 | [damerajee/Gaja-v1.00](https://huggingface.co/damerajee/Gaja-v1.00)| 	47.69 | 52.82 |    76.31  |     40.83   | 44.64	| 	 70.64       |    0.91   |  
 | [manishiitg/open-aditi-hi-v2](https://huggingface.co/manishiitg/open-aditi-hi-v2) | 	59.31 | 59.39 |  82.01   |   61.41     | 45.84 	| 	77.19        |    30.02  |    
-| [ai4bharat/Airavata](https://huggingface.co/ai4bharat/Airavata) | 	45.52 | 46.5 |    69.26  |     43.9   | 40.62	| 	 68.82       |    4.02   |             
+| [ai4bharat/Airavata](https://huggingface.co/ai4bharat/Airavata) | 	45.52 | 46.5 |    69.26  |     43.9   | 40.62	| 	 68.82       |    4.02   |      
 
 # Prompt-Format
 
