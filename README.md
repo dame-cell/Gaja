@@ -10,6 +10,7 @@ We release Gaja , a Hindi/Hinglish chat model instruction finetuned on SarvamAI'
 This repository contains the code for  "Gaja", a project focused on Fine-Tuning SarvamAI's OpenHathi model for Conversational task . which employs the LoRA + Unsloth methodology for efficient fine tuning. 
 
 # Contents 
+1) [Information](#information)
 1) [Indic-Eval](#indic-eval)
 2) [Prompt-Format](#prompt-format)
 3) [Usage-Note](#usage-note)
@@ -17,6 +18,11 @@ This repository contains the code for  "Gaja", a project focused on Fine-Tuning 
 
 If you appreciate this work and found it helpful, consider giving it a star ⭐️ on GitHub. Your support motivates me to continue improving and adding new features. Thank you for your encouragement!
 
+# Information 
+* The model was fine-tuned on only 1k samples
+* The
+
+  
 # Indic-Eval
 Conducting a comprehensive zero-shot evaluation across various tasks, followed by the averaging of all scores, provides a holistic assessment of the model's performance.
 
@@ -32,6 +38,7 @@ Conducting a comprehensive zero-shot evaluation across various tasks, followed b
 |------------------------|-----------|----------|-----------|------|--------|------------|
 | 	47.69 | 52.82 | 0.71     | 76.31        | 	40.83| 	44.64     |  70.64        | 0.91|
 
+![Screenshot (26)](https://github.com/dame-cell/Gaja/assets/122996026/6ce7e541-3590-4736-ba68-be714beac3aa)
 
 # Prompt-Format
 
