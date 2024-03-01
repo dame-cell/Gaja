@@ -34,11 +34,12 @@ Conducting a comprehensive zero-shot evaluation across various tasks, followed b
 | Indic-Translation       | 100       | ❌       | ❌        | ❌   | ❌     | 0.71       | 🔤 BLEU Score               |
 
 # English-Eval
-| Average                   | ARC | HellaSwag | MMLU | TruthfulQA   | Winogrande | GSM8K| 
-|------------------------|-----------|----------|-----------|------|--------|------------|
-| 	47.69 | 52.82 | 0.71     | 76.31        | 	40.83| 	44.64     |  70.64        | 0.91|
 
-![Screenshot (26)](https://github.com/dame-cell/Gaja/assets/122996026/6ce7e541-3590-4736-ba68-be714beac3aa)
+Model name| Average  | ARC | HellaSwag | MMLU | TruthfulQA   | Winogrande | GSM8K|      
+|-------|------------------------|-----------|----------|-----------|------|--------|------------|       
+| damerajee/Gaja-v1.00 | 	47.69 | 52.82 |    76.31  |     40.83   | 44.64	| 	 70.64       |    0.91   |  
+| manishiitg/open-aditi-hi-v2 | 	59.31 | 59.39 |  82.01   |   61.41     | 45.84 	| 	77.19        |    30.02  |    
+| damerajee/Gaja-v1.00 | 	45.52 | 46.5 |    69.26  |     43.9   | 40.62	| 	 68.82       |    4.02   |             
 
 # Prompt-Format
 
