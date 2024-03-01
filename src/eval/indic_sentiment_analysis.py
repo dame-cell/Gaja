@@ -1,4 +1,6 @@
-from Utils.utils import loading_model_tokenizer ,loading_diff_datasets
+from Utils.utils import loading_model_tokenizer 
+from datasets import load_dataset 
+
 import pandas as pd
 from sklearn.metrics import accuracy_score, f1_score
 from tqdm import tqdm  
@@ -45,7 +47,7 @@ def eval_sentiment_analysis(dataset, model, tokenizer):
   
 if __name__ == "__main__":
     Model, Tokenizer = loading_model_tokenizer()
-    dataset = loading_diff_datasets("ai4bharat/IndicSentiment", split='validation', param='translation-hi')
+    dataset = load_dataset("ai4bharat/IndicSentiment", 'translation-hi',split='validation')
     dataset = dataset.shuffle(seed=76)
     dataset = dataset.select(range(100))
     df = eval_sentiment_analysis(dataset, Model, Tokenizer)

@@ -1,5 +1,7 @@
 import pandas as pd
-from Utils.utils import loading_model_tokenizer ,loading_diff_datasets
+from Utils.utils import loading_model_tokenizer 
+from datasets import load_dataset 
+
 
 from datasets import load_dataset, Dataset 
 from sklearn.metrics import accuracy_score, f1_score
@@ -48,7 +50,7 @@ def indic_qa_evaluate(dataset, model, tokenizer, first_number, second_number):
 
 if __name__ == "__main__":
     model,tokenizer = loading_model_tokenizer()
-    dd = loading_diff_datasets("Divyanshu/indicxnli",param='hi', split='test')
+    dd = load_dataset("Divyanshu/indicxnli",'hi', split='test')
     df = indic_qa_evaluate(dd, model, tokenizer, first_number=0, second_number=50)
     df.to_csv("eval_indic_qa.csv")
 
