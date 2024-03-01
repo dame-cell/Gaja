@@ -11,10 +11,11 @@ This repository contains the code for  "Gaja", a project focused on Fine-Tuning 
 
 # Contents 
 1) [Information](#information)
-1) [Indic-Eval](#indic-eval)
-2) [Prompt-Format](#prompt-format)
-3) [Usage-Note](#usage-note)
-4) [English-eval](#english-eval)
+2) [Indic-Eval](#indic-eval)
+3) [English-eval](#english-eval)
+4) [Prompt-Format](#prompt-format)
+5) [Usage-Note](#usage-note)
+5) 
 
 If you appreciate this work and found it helpful, consider giving it a star ⭐️ on GitHub. Your support motivates me to continue improving and adding new features. Thank you for your encouragement!
 
