@@ -37,9 +37,9 @@ Conducting a comprehensive zero-shot evaluation across various tasks, followed b
 
 Model name| Average  | ARC | HellaSwag | MMLU | TruthfulQA   | Winogrande | GSM8K|      
 |-------|------------------------|-----------|----------|-----------|------|--------|------------|       
-| damerajee/Gaja-v1.00 | 	47.69 | 52.82 |    76.31  |     40.83   | 44.64	| 	 70.64       |    0.91   |  
-| manishiitg/open-aditi-hi-v2 | 	59.31 | 59.39 |  82.01   |   61.41     | 45.84 	| 	77.19        |    30.02  |    
-| damerajee/Gaja-v1.00 | 	45.52 | 46.5 |    69.26  |     43.9   | 40.62	| 	 68.82       |    4.02   |             
+| [damerajee/Gaja-v1.00](https://huggingface.co/damerajee/Gaja-v1.00)| 	47.69 | 52.82 |    76.31  |     40.83   | 44.64	| 	 70.64       |    0.91   |  
+| [manishiitg/open-aditi-hi-v2](https://huggingface.co/manishiitg/open-aditi-hi-v2) | 	59.31 | 59.39 |  82.01   |   61.41     | 45.84 	| 	77.19        |    30.02  |    
+| [ai4bharat/Airavata](https://huggingface.co/ai4bharat/Airavata) | 	45.52 | 46.5 |    69.26  |     43.9   | 40.62	| 	 68.82       |    4.02   |             
 
 # Prompt-Format
 
