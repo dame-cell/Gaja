@@ -20,8 +20,9 @@ This repository contains the code for  "Gaja", a project focused on Fine-Tuning 
 If you appreciate this work and found it helpful, consider giving it a star ⭐️ on GitHub. Your support motivates me to continue improving and adding new features. Thank you for your encouragement!
 
 # Information 
-* The model was fine-tuned on only 1k samples
-* The
+* The model was fine-tuned on only 10k samples
+* The model was fine-tuned on a single A10 GPU
+
 
   
 # Indic-Eval
