@@ -10,6 +10,7 @@ python = "^3.11"
 datasets = "^2.16.1"
 bert-score = "^0.3.13"
 nltk = "^3.8.1"
+unsloth = {git = "https://github.com/unslothai/unsloth.git"}
 
 
 [build-system]
