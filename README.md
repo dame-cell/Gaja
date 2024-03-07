@@ -14,8 +14,9 @@ This repository contains the code for  "Gaja", a project focused on Fine-Tuning 
 2) [Indic-Eval](#indic-eval)
 3) [English-eval](#english-eval)
 4) [Prompt-Format](#prompt-format)
-5) [Usage-Note](#usage-note)
-5) 
+5) [Inference](#inference)
+6) [Usage-Note](#usage-note)
+
 
 If you appreciate this work and found it helpful, consider giving it a star ⭐️ on GitHub. Your support motivates me to continue improving and adding new features. Thank you for your encouragement!
 
@@ -61,6 +62,12 @@ The prompt for the Model with system prompt
 <|im_start|>assistant
 {}<|im_end|> 
 ```
+# Inference 
+You can easily try chatting with this model on Huggingface spaces through this link [Gaja](https://huggingface.co/spaces/damerajee/Gaja-chat)
+
+### Note
+* This model is gguf format and the space is run on CPU so the response might take time ,please be patient :)
+
 
 # Usage-Note
 It's important to note that the models have not undergone detoxification. Therefore, while they possess impressive linguistic capabilities, there is a possibility for them to generate content that could be deemed harmful or offensive. We urge users to exercise discretion and supervise the model's outputs closely, especially in public or sensitive applications.
